@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building Project</title>
+
+    <!-- icon website -->
+
+    <link rel="shortcut icon" href="./assets/icon/Icon_website.png" type="image/x-icon">
+
+    <!-- link navbar -->
+
+    <link rel="stylesheet" href="./CSS/navbar.css">
+
+    <!-- link benner  -->
+
+    <link rel="stylesheet" href="./CSS/benner.css">
+    
+    <!-- link boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    
+    <!-- link icon boostrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+    <!-- link animetion text -->
+
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+    <!-- header and navbar -->
+    <header class="container-fluid bg-light shadow-lg">
+        <div class="container py-lg-3 py-2">
+            <nav class="navbar navbar-expand-lg">
+                <!-- logo -->
+                <div class="col-3">
+                    <a class="navbar-brand fw-bold fs-1 text-primary" href="">ETEC CENTER</a>
+                </div>
+                <!-- menu -->
+                <div class="col-6 collapse navbar-collapse  ">
+                    <ul class="navbar-nav w-100 font-monospace  justify-content-between">
+                        <li><a class="nav-link text-uppercase fw-bold active fs-5" id="hover-link" href="">Home</a></li>
+                        <li><a class="nav-link text-uppercase fw-bold fs-5" id="hover-link" href="">Listings</a></li>
+                        <li><a class="nav-link text-uppercase fw-bold fs-5" id="hover-link" href="">Account</a></li>
+                        <li><a class="nav-link text-uppercase fw-bold fs-5" id="hover-link" href="">Pages</a></li>
+                        <li><a class="nav-link text-uppercase fw-bold fs-5" id="hover-link" href="">Docs</a></li>
+                        <li><a class="nav-link text-uppercase fw-bold fs-5" id="hover-link" href="">Components</a></li>
+                    </ul>
+                </div>
+                <!-- icon  -->
+                <div class="col-3 d-flex align-items-center gap-4 justify-content-end">
+                    <i id="icon-hover" class="bi fs-4 bi-brightness-high"></i>
+                    <i id="icon-hover" class="bi fs-4 bi-person"></i>
+                    <button id="icon-hover"  class="btn d-lg-flex d-none py-2 btn-danger" >
+                        <i class="bi bi-triangle me-1"></i>
+                        Add Property
+                    </button>
+                    <button class="btn border-0 d-lg-none d-flex" data-bs-toggle="offcanvas"
+                     data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                        <i class="bi fs-1 bi-list"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- sidbar  -->
+    <div  class=" offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header py-4  border-bottom">
+                <h1 class="text-primary fw-bold">ETEC CENTER</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="navbar-nav font-monospace justify-content-between">
+                            <li  id="hover-sidebar" class="p-3 py-2"><a class="nav-link text-uppercase fw-bold active fs-5" href="">Home</a></li>
+                            <li  id="hover-sidebar" class="p-3 py-2"><a class="nav-link text-uppercase fw-bold fs-5" href="">Listings</a></li>
+                            <li  id="hover-sidebar" class="p-3 py-2"><a class="nav-link text-uppercase fw-bold fs-5" href="">Account</a></li>
+                            <li  id="hover-sidebar" class="p-3 py-2"><a class="nav-link text-uppercase fw-bold fs-5" href="">Pages</a></li>
+                            <li  id="hover-sidebar" class="p-3 py-2"><a class="nav-link text-uppercase fw-bold fs-5" href="">Docs</a></li>
+                            <li  id="hover-sidebar" class="p-3 py-2"><a class="nav-link text-uppercase fw-bold fs-5" href="">Components</a></li>
+                
+                        </ul>
+                        <div class="w-100 d-flex justify-content-center p-4">
+                            <button id="icon-hover"  class="btn d-lg-noe d-flex py-2 btn-danger" >
+                                <i class="bi bi-triangle me-1"></i>
+                                Add Property
+                            </button>
+                        </div>
+                
+            </div>
+    </div>
+
+    <!-- main content -->
+    <main class="w-100" style="height: 590px;">
+        <!-- benner -->
+        <div class="container-fluid p-0 h-100 ">
+            <div id="carouselExampleFade" class="h-100 carousel slide carousel-fade" data-bs-ride="carousel">
+                <div  class="carousel-inner h-100">
+                    <!-- benner1 -->
+                    <div  class="carousel-item active h-100 position-relative">
+                        <div id="opacity"></div>
+                        <!-- detail benner-->
+                        <div class="detail  position-absolute">
+                            <h1 class="animate__animated animate__zoomInDown">Welcome to My building</h1>
+                            <p class="animate__animated animate__zoomInLeft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique maiores cum non recusandae quam nostrum praesentium odio neque dolore cupiditate deleniti eos, molestiae porro minima asperiores enim autem. </p>
+                        </div>
+                        <!-- image benner -->
+                        <img src="./assets/images/benner1.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <!-- benner2 -->
+                    <div class="carousel-item h-100 position-relative">
+                        <div id="opacity"></div>
+                        <!-- detail benner-->
+                        <div class="detail  position-absolute">
+                            <h1 class="animate__animated animate__zoomInDown">Welcome to My building</h1>
+                            <p class="animate__animated animate__zoomInLeft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique maiores cum non recusandae quam nostrum praesentium odio neque dolore cupiditate deleniti eos, molestiae porro minima asperiores enim autem. </p>
+                        </div>
+                        <!-- image benner -->
+                        <img src="./assets/images/benner2.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                    <!-- benner 3 -->
+                    <div class="carousel-item h-100 position-relative">
+                        <div id="opacity"></div>
+                        <!-- detail benner-->
+                        <div class="detail  position-absolute">
+                            <h1 class="animate__animated animate__zoomInDown">Welcome to My building</h1>
+                            <p class="animate__animated animate__zoomInLeft">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique maiores cum non recusandae quam nostrum praesentium odio neque dolore cupiditate deleniti eos, molestiae porro minima asperiores enim autem. </p>
+                        </div>
+                         <img src="./assets/images/benner3.jpg" class="d-block w-100 h-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Top Offers -->
+        <section class="container p-0 bg-primary" style="height: 500px;">
+
+        </section>
+        <!--  -->
+    </main>
+
+    <!-- footer -->
+    <footer></footer>
+</body>
+    <!-- link js boostrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>
